@@ -1,50 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+/******************** PROJECT: ALLKOKO CENTRAL (3 FILES) ********************/
+
+/==================== FILE 1: index.html ====================/
+
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ALLKOKO Central</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body>
-  <header>
-    <h1>ALLKOKO Central</h1>
-    <p>Your gateway to all my projects!</p>
-  </header>
+<body><header>
+  <h1>ALLKOKO Central</h1>
+  <p>Your smart project hub</p>
+</header><div class="controls">
+  <input id="search" placeholder="Search projects..." onkeyup="searchCards()" />  <div class="filters">
+    <button onclick="filterCards('all')">All</button>
+    <button onclick="filterCards('tools')">Tools</button>
+    <button onclick="filterCards('stories')">Stories</button>
+    <button onclick="filterCards('education')">Education</button>
+  </div>
+</div><main>  <div class="card" data-category="tools">
+    <i class="fas fa-calculator"></i>
+    <h3>Quick Tools Pro</h3>
+    <a href="https://wwwallkoko29-code.github.io/QuickTools-Pro-/index.html" target="_blank">Open</a>
+  </div>  <div class="card" data-category="stories">
+    <i class="fas fa-scroll"></i>
+    <h3>Nexora Stories</h3>
+    <a href="https://wwwallkoko29-code.github.io/nexora-hub/" target="_blank">Open</a>
+  </div>  <div class="card" data-category="education">
+    <i class="fas fa-book"></i>
+    <h3>LEARN FAST</h3>
+    <a href="https://wwwallkoko29-code.github.io/LEARN-FAST/" target="_blank">Open</a>
+  </div></main><script src="script.js"></script></body>
+</html />
+  
 
-  <main>
-    <div class="site-card">
-      <i class="fas fa-calculator fa-3x"></i>
-      <h2>Quick Tools Pro</h2>
-      <p>Handy tools for quick calculations and utilities.</p>
-      <a href="https://wwwallkoko29-code.github.io/QuickTools-Pro-/index.html" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="site-card">
-      <i class="fas fa-scroll fa-3x"></i>
-      <h2>True American Stories</h2>
-      <p>Read amazing true stories from America.</p>
-      <a href="https://wwwallkoko29-code.github.io/nexora-hub/" target="_blank">Visit Site</a>
-    </div>
-
-    
-    <div class="site-card">
-      <i class="fas fa-book fa-3x"></i>
-      <h2>LEARN FAST</h2>
-      <p>Educational resources to learn quickly.</p>
-      <a href="https://wwwallkoko29-code.github.io/LEARN-FAST/" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="site-card">
-      <i class="fas fa-scroll fa-3x"></i>
-      <h2>True American Stories</h2>
-      <p>Read amazing true stories from America.</p>
-      <a href="https://wwwallkoko29-code.github.io/True-american-stories-/" target="_blank">Visit Site</a>
-    </div>
-
-  <footer>
-    <p>© 2026 ALLKOKO Central | All rights reserved.</p>
-  </footer>
-</body>
-</html>
